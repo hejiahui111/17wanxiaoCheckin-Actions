@@ -281,7 +281,7 @@ git clone git@github.com:.../17wanxiaoCheckin-Actions.git(你项目的ssh地址)
 3、进入克隆之后的文件夹，右键点击 Git Bash Here，依次运行如下命令即可
 
 ```
-git checkout --orphan newBranch
+git checkout --orphan newBranch  
 git add -A  # Add all files and commit them
 git commit -am "change"
 git branch -D master  # Deletes the master branch
