@@ -28,7 +28,12 @@ areaStr = json.dumps(area, ensure_ascii=False)
 # POST提交的json字段，根据自己的修改
 jsons ={"businessType":"epmpics","method":"submitUpInfoSchool",
         "jsonData":{"deptStr":{"deptid":72431,"text":"信息科学与工程学院-物联网工程-物联网1904"},
-                    "areaStr":"{\"streetNumber\":\"\",\"street\":\"长椿路辅路\",\"district\":\"中原区\",\"city\":\"郑州市\",\"province\":\"河南省\",\"town\":\"\",\"pois\":\"河南工业大学(莲花街校区)\",\"lng\":113.55052800000281,\"lat\":34.8389499623524,\"address\":\"中原区长椿路辅路河南工业大学(莲花街校区)\",\"text\":\"河南省-郑州市\",\"code\":\"\"}","reportdate":1599829879046,"customerid":43,"deptid":72431,"source":"app","templateid":"clockSign3","stuNo":"201916070401","username":"吴涛","userid":14528508,"updatainfo":[{"propertyname":"temperature","value":"36.4"},{"propertyname":"symptom","value":"无症状"}],"customerAppTypeRuleId":148,"clockState":0},"token":"0805c1f3-4718-499f-979b-e67d4329875c"}
+                    "areaStr":"{\"streetNumber\":\"\",\"street\":\"长椿路辅路\",\"district\":\"中原区\",\"city\":\"郑州市\",\"province\":\"河南省\",\"town\":\"\",\"pois\":\"河南工业大学(莲花街校区)\",\"lng\":113.55052800000281,\"lat\":34.8389499623524,\"address\":\"中原区长椿路辅路河南工业大学(莲花街校区)\",\"text\":\"河南省-郑州市\",\"code\":\"\"}",
+                    "reportdate":round(time.time()*1000),"customerid":43,"deptid":72431,"source":"app",
+                    "templateid":"clockSign3","stuNo":"201916070401","username":"吴涛",
+                    "userid":14528508,"updatainfo":[{"propertyname":"temperature","value":"36.4"},
+                                                    {"propertyname":"symptom","value":"无症状"}],
+                    "customerAppTypeRuleId":148,"clockState":0},"token":"0805c1f3-4718-499f-979b-e67d4329875c"}
 
 
 
