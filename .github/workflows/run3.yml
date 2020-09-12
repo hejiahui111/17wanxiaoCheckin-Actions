@@ -29,7 +29,7 @@ jobs:
         python3 wanxiao_night.py <<EOF
         ${{secrets.TEXT}}
         ${{secrets.DEPTID}}
-        ${{secrets.ADDRESS}}
+        ${{secrets.ADDRESS}}  
         ${{secrets.ADDTEXT}}
         ${{secrets.CODE}}
         ${{secrets.STUNUM}}
