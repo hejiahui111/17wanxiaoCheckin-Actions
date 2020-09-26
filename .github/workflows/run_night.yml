@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ master ]
   schedule:
-    - cron: 0 22 * * *
+    - cron: 0 13 * * *
 
 jobs:
   build:
@@ -26,10 +26,10 @@ jobs:
          
     - name: HealthCheckin
       run: |
-        python3 17wanxiao.py <<EOF
+        python3 wanxiao_night.py <<EOF
         ${{secrets.TEXT}}
         ${{secrets.DEPTID}}
-        ${{secrets.ADDRESS}}
+        ${{secrets.ADDRESS}}  
         ${{secrets.ADDTEXT}}
         ${{secrets.CODE}}
         ${{secrets.STUNUM}}
