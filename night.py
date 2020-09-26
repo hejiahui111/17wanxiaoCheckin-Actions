@@ -26,7 +26,9 @@ area = {'address': address, 'text': addtext, 'code': code}
 areaStr = json.dumps(area, ensure_ascii=False)
 
 # POST提交的json字段，根据自己的修改
-jsons ={"businessType":"epmpics","method":"submitUpInfoSchool","jsonData":{"deptStr":{"deptid":72102,"text":"粮油食品学院-粮食工程-粮工1803"},"areaStr":"{\"streetNumber\":\"\",\"street\":\"长椿路辅路\",\"district\":\"中原区\",\"city\":\"郑州市\",\"province\":\"河南省\",\"town\":\"\",\"pois\":\"河南工业大学(莲花街校区)\",\"lng\":113.55057699999924,\"lat\":34.83918796232838,\"address\":\"中原区长椿路辅路河南工业大学(莲花街校区)\",\"text\":\"河南省-郑州市\",\"code\":\"\"}","reportdate":1601125933196,"customerid":43,"deptid":72102,"source":"app","templateid":"clockSign3","stuNo":"201811020308","username":"和嘉晖","userid":9564950,"updatainfo":[{"propertyname":"temperature","value":"36.4"},{"propertyname":"symptom","value":"无症状"}],"customerAppTypeRuleId":148,"clockState":0},"token":"1b18056c-8bff-40fa-84eb-c1262d3d6fef"}
+jsons ={"businessType":"epmpics","method":"submitUpInfoSchool",
+        "jsonData":{"deptStr":{"deptid":72102,"text":"粮油食品学院-粮食工程-粮工1803"},
+                    "areaStr":"{\"streetNumber\":\"\",\"street\":\"长椿路辅路\",\"district\":\"中原区\",\"city\":\"郑州市\",\"province\":\"河南省\",\"town\":\"\",\"pois\":\"河南工业大学(莲花街校区)\",\"lng\":113.55057699999924,\"lat\":34.83918796232838,\"address\":\"中原区长椿路辅路河南工业大学(莲花街校区)\",\"text\":\"河南省-郑州市\",\"code\":\"\"}","reportdate":1601125933196,"customerid":43,"deptid":72102,"source":"app","templateid":"clockSign3","stuNo":"201811020308","username":"和嘉晖","userid":9564950,"updatainfo":[{"propertyname":"temperature","value":"36.4"},{"propertyname":"symptom","value":"无症状"}],"customerAppTypeRuleId":148,"clockState":0},"token":"1b18056c-8bff-40fa-84eb-c1262d3d6fef"}
 
 
 response = requests.post(check_url, json=jsons)
