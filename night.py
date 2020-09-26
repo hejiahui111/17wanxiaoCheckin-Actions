@@ -36,7 +36,7 @@ res = json.dumps(response.json(), sort_keys=True, indent=4, ensure_ascii=False)
 print(res)
 
 
-SCKEY = sckey
+SCKEY = SCU115521Tcc18c0c55b554ad33d48b2d534891e0a5f6f5143e22a2
 
 now_time = datetime.datetime.now()
 bj_time = now_time + datetime.timedelta(hours=8)
