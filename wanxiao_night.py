@@ -94,3 +94,4 @@ if response.json()["errmsg"] == 'success':
         print("Server酱推送服务成功")
 else:
         print("Something Wrong")
+        
