@@ -8,7 +8,7 @@ import requests
 check_url = "https://reportedh5.17wanxiao.com/sass/api/epmpics"
 
 text = input()
-deptId = eval(input())
+deptId = input()
 address = input()
 addtext = input()
 code = input()
